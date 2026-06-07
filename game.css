@@ -1,0 +1,154 @@
+/*SMS simulado*/
+.sms-simulado {
+    background-color: #e1f5fe;
+    border-left: 5px solid #0288d1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    text-align: left;
+    font-size: 18px; /*Letra grande para adultos mayores*/
+    color: #333;
+}
+
+.enlace-falso {
+    color: #0056b3;
+    text-decoration: underline;
+    word-break: break-all;
+}
+
+/*Botones de decisión simu*/
+.btn-peligro {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.btn-seguro {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.oculto {
+    display: none;
+}
+
+.feedback-texto {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* Estilos para el feedback */
+.feedback-texto.correcto {
+    background-color: #d4edda;
+    color: #155724;
+    border-left: 5px solid #28a745;
+}
+
+.feedback-texto.incorrecto {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-left: 5px solid #dc3545;
+}
+
+/* Botón azul para continuar */
+.btn-siguiente {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff; 
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.btn-siguiente:hover {
+    background-color: #0056b3;
+}
+/* Contenedor del mockup */
+.feedback-contenedor {
+    text-align: center;
+    background-color: #2C2C2C;
+    color: #F5F5F5; /* Letras color */
+    padding: 25px 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.feedback-icono {
+    font-size: 70px; /* tmaño grande para el emoji */
+    display: block;
+    margin-bottom: 15px;
+}
+
+.feedback-titulo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF; /* titulo blanco para resaltar */
+    margin-bottom: 15px;
+}
+
+.feedback-texto {
+    font-size: 18px;
+    color: #E0E0E0; /* Texto descriptivo */
+    line-height: 1.5;
+    text-align: left; 
+    margin-bottom: 20px;
+}
+
+/* El botón azul */
+.btn-siguiente {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-siguiente:hover {
+    background-color: #0056b3;
+}
+
+/*especio para los botones de decisiOn*/
+#seccionBotones {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+/* Botnes  grandes y fáciles de presionar */
+.btn-seguro, .btn-peligro {
+    width: 100%;
+    padding: 18px; /* Botones gorditos modif sea pequeño*/
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}

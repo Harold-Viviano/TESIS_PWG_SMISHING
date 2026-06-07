@@ -1,0 +1,94 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* centra el contenedor en celular */
+    background-color: #121212; /* fondo oscuro : fatigar la vista */
+    color: #E0E0E0;
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #1E1E1E;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    padding: 35px 25px; /*espacio interno de respiro */
+}
+
+/* ================= HUD DEL JUEGO ================= */
+.hud-juego {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2C2C2C;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border-left: 5px solid #0288d1;
+    border-right: 5px solid #ff9800;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.indicador-izq {
+    font-size: 22px !important;
+    font-weight: bold;
+    color: #4fc3f7;
+    margin: 0;
+}
+
+.indicador-der {
+    font-size: 22px !important;
+    font-weight: bold;
+    color: #ffb74d;
+    margin: 0;
+}
+
+/* ================= TIPOGRAFÍA GIGANTE Y BOTONES ================= */
+#saludoJugador {
+    font-size: 38px !important;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#escenarioTexto {
+    font-size: 24px !important;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.sms-simulado {
+    font-size: 26px !important;
+    line-height: 1.6;
+    padding: 30px !important;
+    background-color: #2C2C2C;
+    border-radius: 10px;
+    border-left: 5px solid #ff9800;
+    margin-top: 20px;
+    margin-bottom: 30px; /*botones hacia abajo */
+}
+
+/* evitar accidente */
+#seccionBotones {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* separación botón verde y rojo */
+}
+
+.btn-seguro, .btn-peligro, .btn-siguiente {
+    font-size: 22px !important;
+    padding: 20px !important;
+    border-radius: 12px;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador - Prevención de Smishing</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <!--HUD-->
+            <div class="hud-juego">
+                <p id="progresoTexto" class="indicador-izq">Escenario 1 de 8</p>
+                <p id="marcadorPuntos" class="indicador-der">Puntos: 0</p>
+            </div>
+            
+            <h2 id="saludoJugador">¡Atento, jugador!</h2>
+            <p id="escenarioTexto" class="instruccion"></p>
+        </header>
+        
+        <section class="sms-simulado">
+            <p id="smsTexto"></p>
+        </section>
+
+        <!--BOTON claro para AM-->
+        <section class="acciones" id="seccionBotones">
+            <button id="btnSeguro" class="btn-seguro">🟢 Es un mensaje seguro</button>
+            <button id="btnEstafa" class="btn-peligro">🔴 Es una estafa </button>
+        </section>
+        
+        <!-- FB y botón siguiente -->
+        <div id="feedback" class="oculto"></div>
+        <button id="btnSiguiente" class="btn-siguiente oculto">Siguiente escenario</button>
+        
+    </main>
+
+    <script type="module" src="js/supabaseClient.js"></script>
+    <script type="module" src="js/gameLogic.js"></script>
+</body>
+</html>

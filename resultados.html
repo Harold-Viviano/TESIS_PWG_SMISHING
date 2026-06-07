@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados - Prevención de Smishing</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>¡Simulación Completada!</h1>
+        </header>
+        
+        <section class="feedback-contenedor">
+            <!-- insignia oro, palta, bronce-->
+            <div id="iconoInsignia" class="feedback-icono">🏆</div>
+            <div id="tituloInsignia" class="feedback-titulo">Calculando tu rango...</div>
+            
+            <p id="resumenPuntaje" class="feedback-texto" style="text-align: center; font-size: 20px;"></p>
+            
+            <!-- retroalimentación final basado en su puntaje -->
+            <p id="mensajeFinal" class="feedback-texto" style="margin-top: 20px;"></p>
+            
+            <button id="btnReiniciar" class="btn-siguiente" style="margin-top: 20px;">Volver al Inicio</button>
+        </section>
+    </main>
+
+    <script type="module" src="js/resultados.js"></script>
+    
+</body>
+</html>

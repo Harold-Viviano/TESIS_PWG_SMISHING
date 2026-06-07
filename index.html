@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prevención de Smishing</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>¡Conviértete en un Ciudadano Precavido!</h1>
+            <p class="instruccion">Por favor, lee esta información antes de comenzar.</p>
+        </header>
+
+        <!-- Caja de Inducción y Consentimiento -->
+        <section class="feedback-contenedor" style="text-align: left; margin-bottom: 20px;">
+            <div class="feedback-titulo">🎯 ¿Cuál es el objetivo?</div>
+            <p class="feedback-texto">Este simulador te ayudará a aprender cómo identificar mensajes de texto (SMS) falsos de estafadores para que puedas proteger tu información personal y bancaria.</p>
+
+            <div class="feedback-titulo">📱 ¿Qué haremos?</div>
+            <p class="feedback-texto">Te mostraremos <strong>10 ejemplos de mensajes</strong> que podrías recibir en tu celular. Solo tendrás que elegir si pulsarías en el enlace o si prefieres ignorarlo. ¡No hay límite de tiempo, tómalo con calma!</p>
+
+            <div class="feedback-titulo">🛡️ Consentimiento Informado</div>
+            <p class="feedback-texto">Tus respuestas serán totalmente anónimas y se usarán únicamente con fines de investigación académica. Si tienes alguna duda durante la simulación, puedes comunicármela en cualquier momento</p>
+        </section>
+
+        <!--registro -->
+        <section class="registro-seccion">
+            <label for="nombreJugador" style="font-size: 18px; font-weight: bold;">Ingresa tu nombre completo o apodo para empezar:</label>
+            <input type="text" id="nombreJugador" placeholder="Ej. Carlos, María..." style="width: 94%; padding: 15px; font-size: 18px; margin-top: 10px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #ccc;">
+            <button id="btnComenzar" class="btn-siguiente">Acepto participar y comenzar</button>
+        </section>
+    </main>
+
+    <!-- Logica para guardar el nombre-->
+    <script>
+        document.getElementById("btnComenzar").addEventListener("click", () => {
+            const nombre = document.getElementById("nombreJugador").value.trim();
+            if (nombre === "") {
+                alert("Por favor, ingresa tu nombre para poder continuar.");
+                return;
+            }
+            // nombre en la sesión
+            sessionStorage.setItem("jugadorNombre", nombre);
+            //pantalla de las preguntas
+            window.location.href = "simulador.html";
+        });
+    </script>
+</body>
+</html>
